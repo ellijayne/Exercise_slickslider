@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+.hero-carousel img {
+    width: 100%;
+
+}
+
+
+.fa-chevron-right, .fa-chevron-left  {
+    color: #000;
+    font-size: 50px;
+    position: absolute;
+    /* it comes down 50% of the parent, but the top of it starts 50% down so it looks lower than 50% */
+    top: 50%;
+
+    /* we then use this one to say move back up 50% of it's self on y axis */
+    transform: translateY(-50%);
+    left: 50px;
+    z-index: 999;
+    
+}
+
+.fa-chevron-right {
+    left: auto;
+    right: 50px;
+}
+
+.slick-dots {
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.slick-dots li {
+    display: inline-block; 
+    height: 20px;
+    width: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin: 0 10px;
+    border: solid 1px #fff;
+
+}
+
+.slick-dots li button {
+    display: none;
+}
+
+.slick-dots li.slick-active {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.hero-gallery {
+    text-align: center;
+    margin: 40px 0;
+}
